@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_search_product_img"
+            android:layout_width="140dip"
+            android:layout_height="140dip"
+            android:src="@drawable/product_no_img" />
+
+        <ImageView
+            android:id="@+id/iv_search_product_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/product_checked"
+            android:layout_alignRight="@id/iv_search_product_img"
+            android:layout_alignBottom="@id/iv_search_product_img"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_search_product_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_search_product_img"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:maxLines="2"
+            android:text="JACK WOLFSKIN狼爪"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:id="@+id/tv_search_product_stylenum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:ellipsize="end"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:text="5004891"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:id="@+id/tv_search_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:ellipsize="end"
+        android:maxLength="30"
+        android:maxLines="2"
+        android:text="2014秋冬JACK WOLFSKIN狼爪户外男防水透气冲锋衣三合一5004891亚版"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:id="@+id/tv_search_product_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:ellipsize="end"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:text="蓝色"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:id="@+id/tv_search_product_size"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="S"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:id="@+id/tv_search_product_count"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="x30"
+        android:textColor="#6FB2DA"
+        android:textSize="20sp" />
+
+</LinearLayout>

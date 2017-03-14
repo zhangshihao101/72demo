@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.spt.controler.CircleImageView
+        android:id="@+id/iv_con_syn_com_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/test9696" />
+
+    <TextView
+        android:id="@+id/tv_con_syn_com_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_con_syn_com_logo"
+        android:ellipsize="end"
+        android:maxEms="11"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:text="天津七加二科技有限公司"
+        android:textColor="#282828"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_con_syn_com_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_con_syn_com_name"
+        android:layout_toRightOf="@id/tv_con_syn_com_name"
+        android:text="天津"
+        android:textColor="#787878" />
+
+    <TextView
+        android:id="@+id/tv_con_syn_com_sketch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_con_syn_com_name"
+        android:layout_below="@id/tv_con_syn_com_name"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:text="企业简述：驴友，天津鑫茂民营科技园C2单元6楼"
+        android:textColor="#3c3c3c" />
+
+    <com.spt.controler.FlowTagLayout
+        android:id="@+id/ftl_con_syn_com_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_con_syn_com_sketch"
+        android:layout_below="@id/tv_con_syn_com_sketch"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" >
+    </com.spt.controler.FlowTagLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ftl_con_syn_com_lable" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/tv_con_syn_com_name"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

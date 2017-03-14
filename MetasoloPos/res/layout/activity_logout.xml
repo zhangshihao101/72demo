@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="30"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="160"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+                android:background="#FFFFFF" >
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="15dip"
+                    android:text="当前登录用户：杨秋平"
+                    android:textColor="#717171"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="15dip"
+                    android:text="@string/logout_report"
+                    android:textColor="#333333"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_report"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="13dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_indent_number"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_sale_amount"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_indent_money"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_traffic"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_indent_conversion"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_ll1"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_order"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sale"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_order_pay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="15dip"
+                        android:text="￥ 0.00"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_traffic"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_conversion"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="0%"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_ll2"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="20dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_cash"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_alipay"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_wechat"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_credit"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_text"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="@string/logout_gift"
+                        android:textColor="#717171"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_ll3"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_cash_pay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="￥ 0.00"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_alipay_pay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="￥ 0.00"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wechat_pay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="15dip"
+                        android:text="￥ 0.00"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_visa_pay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="￥ 0.00"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gift_pay"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_logout_message_number"
+                        android:gravity="center"
+                        android:padding="15dip"
+                        android:text="￥ 0.00"
+                        android:textColor="#333333"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_logout_cancal"
+                        android:layout_width="0dip"
+                        android:layout_height="80dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_logout_cancel"
+                        android:gravity="center"
+                        android:text="@string/cancel"
+                        android:textColor="#717171"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/tv_logout_enter"
+                        android:layout_width="0dip"
+                        android:layout_height="80dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_logout_enter"
+                        android:gravity="center"
+                        android:text="@string/logout_exit"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="30"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

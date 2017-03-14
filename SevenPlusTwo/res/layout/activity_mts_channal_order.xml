@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#36a3ea" >
+
+        <ImageView
+            android:id="@+id/iv_mts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/topbar_back_btn"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="渠道订单"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <RadioGroup
+            android:id="@+id/rgp_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <RadioButton
+                android:id="@+id/rbtn_today"
+                android:layout_width="0dip"
+                android:layout_height="24dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_switch_days_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="今日"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_yestoday"
+                android:layout_width="0dip"
+                android:layout_height="24dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_switch"
+                android:button="@null"
+                android:gravity="center"
+                android:text="昨日"
+                android:textColor="#329cde"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_sevenday"
+                android:layout_width="0dip"
+                android:layout_height="24dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_switch"
+                android:button="@null"
+                android:gravity="center"
+                android:text="近7日"
+                android:textColor="#329cde"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_thirtyday"
+                android:layout_width="0dip"
+                android:layout_height="24dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_switch_days_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="近30日"
+                android:textColor="#329cde"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D6D6D9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sale_channel_tips_1"
+                android:drawablePadding="5dip"
+                android:text="批发"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/tv_text1"
+                android:drawableLeft="@drawable/sale_channel_tips_2"
+                android:drawablePadding="5dip"
+                android:text="分销"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/tv_text2"
+                android:drawableLeft="@drawable/sale_channel_tips_3"
+                android:drawablePadding="5dip"
+                android:text="零售"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_frame_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

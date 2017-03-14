@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="waitPay">#EF9956</color>
+    <color name="waitSend">#EF9956</color>
+    <color name="sended">#ACD04F</color>
+    <color name="complete">#DE5934</color>
+    <color name="returnPay">#6CAA1A</color>
+    <color name="cancelPay">#999000</color>
+    <color name="other">#9C9C9C</color>
+    <color name="company_detail">#2492da</color>
+
+    <!-- loading圈的四种颜色 -->
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="oneBg">#ECF7F5</color>
+    <color name="twoBg">#F2F8E4</color>
+    <color name="threeBg">#E8F3FB</color>
+    <color name="fourBg">#FCEEEE</color>
+    <color name="oneTe">#72CCBD</color>
+    <color name="twoTe">#A5CE51</color>
+    <color name="threeTe">#52AEE2</color>
+    <color name="fourTe">#F38D8D</color>
+
+    <!-- activity的透明度 -->
+    <color name="activity_background">#50000000</color>
+    
+    <!-- 扫描二维码 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    
+    <!-- 换班取消键 -->
+    <color name="logout_cancel_pressed">#888888</color>
+    <color name="logout_cancel_normal">#CCCCCC</color>
+
+    <!-- 换班确认键 -->
+    <color name="logout_enter_pressed">#D4F0FF</color>
+    <color name="logout_enter_normal">#36a3ea</color>
+    
+    <color name="light">#FFEEEEEE</color>
+
+</resources>

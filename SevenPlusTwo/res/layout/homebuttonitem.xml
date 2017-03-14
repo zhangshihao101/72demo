@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_homeButton_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/homebuttongray"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <ImageView
+        android:id="@+id/iv_homeButton_img"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="5sp" />
+
+    <TextView
+        android:id="@+id/tv_homeButton_text"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="7"
+        android:textSize="@dimen/my_buttonTextSize"
+        android:textColor="@android:color/black"
+        android:background="@null"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="34"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="105"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/member_bgs"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="130"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="85"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dip" >
+
+                        <TextView
+                            android:id="@+id/tv_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="会员搜索"
+                            android:textColor="#333333"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/et_membersearch"
+                            android:layout_width="320dip"
+                            android:layout_height="50dip"
+                            android:layout_below="@+id/tv_textview"
+                            android:layout_marginTop="13dip"
+                            android:background="@drawable/selector_membersearch_edit"
+                            android:hint="卡号/手机号/姓名"
+                            android:singleLine="true"
+                            android:textColor="#333333" />
+
+                        <Button
+                            android:id="@+id/btn_membersearch"
+                            android:layout_width="85dip"
+                            android:layout_height="50dip"
+                            android:layout_alignRight="@+id/et_membersearch"
+                            android:layout_below="@+id/et_membersearch"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/selector_member"
+                            android:gravity="center"
+                            android:text="搜 索"
+                            android:textColor="#66CCFF" />
+
+                        <ListView
+                            android:id="@+id/list"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn_membersearch"
+                            android:layout_marginTop="10dip" >
+                        </ListView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="20"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#CCCCCC"
+                        android:text="取    消"
+                        android:textColor="#333333"
+                        android:textSize="26sp" />
+
+                    <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#66CCFF"
+                        android:text="新    增"
+                        android:textColor="#ffffff"
+                        android:textSize="26sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="47"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</LinearLayout>

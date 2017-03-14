@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mts_login_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip" >
+
+        <ImageView
+            android:id="@+id/iv_mts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mts_login_back"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cb_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dip"
+        android:checked="true"
+        android:text="我已同意授权绑定此账户，下次免登陆"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_mts_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cb_remind"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/mts_login_btn"
+        android:text="登    录"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="52dip"
+        android:layout_above="@+id/btn_mts_login"
+        android:layout_alignLeft="@+id/btn_mts_login"
+        android:layout_alignRight="@+id/btn_mts_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dip" >
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_h" />
+
+        <TextView
+            android:id="@+id/tv_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_line"
+            android:layout_marginBottom="10dip"
+            android:drawableLeft="@drawable/psw_icon"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:text="密码:"
+            android:textColor="#52aee2"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_line"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dip"
+            android:background="@drawable/psw_clear"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_above="@+id/iv_line"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/iv_clear"
+            android:layout_toRightOf="@+id/tv_psw"
+            android:background="@null"
+            android:ellipsize="middle"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_urn"
+        android:layout_width="wrap_content"
+        android:layout_height="52dip"
+        android:layout_above="@+id/rl_psw"
+        android:layout_alignLeft="@+id/btn_mts_login"
+        android:layout_alignRight="@+id/btn_mts_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dip" >
+
+        <ImageView
+            android:id="@+id/iv_line_urn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line_h" />
+
+        <TextView
+            android:id="@+id/tv_urn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_line_urn"
+            android:layout_marginBottom="10dip"
+            android:drawableLeft="@drawable/urn_icon"
+            android:drawablePadding="8dip"
+            android:gravity="center_vertical"
+            android:text="账户:"
+            android:textColor="#52aee2"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_clear_urn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_line_urn"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dip"
+            android:background="@drawable/psw_clear"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_urn"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_above="@+id/iv_line_urn"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/iv_clear_urn"
+            android:layout_toRightOf="@+id/tv_urn"
+            android:background="@null"
+            android:ellipsize="middle"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

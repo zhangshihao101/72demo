@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        
+        <ImageView 
+        android:id="@+id/img_guide"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/tv_guide_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/img_guide"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="mohd-bdsb冲锋衣"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_guide_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_guide_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="￥256.00"
+        android:textColor="#FF6633"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_guide_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_guide_content"
+		android:layout_toRightOf="@+id/tv_guide_price"
+		android:layout_alignBaseline="@+id/tv_guide_price"
+		android:layout_alignBottom="@+id/tv_guide_price"
+		android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:text="数量：1235"
+        android:textColor="#717171"
+        android:textSize="15sp" />
+    
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_shop_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtb_shop_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="@dimen/my_marginVertical" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_shop_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/imageshape"
+                    android:contentDescription="@string/contentDescription"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="4" >
+
+                <LinearLayout
+                    android:id="@+id/ll_shop_shopName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/my_marginVertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_shop_shopName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shop_shopName"
+                        android:textColor="#A0A0A0"
+                        android:textSize="@dimen/my_contentTextSize" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_shopNameShow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/my_buttonTextSize" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/contentDescription"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:padding="@dimen/my_marginVertical" >
+
+            <TextView
+                android:id="@+id/tv_shop_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shop_place"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <TextView
+                android:id="@+id/tv_shop_placeShow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my_marginVertical"
+                android:layout_toRightOf="@+id/tv_shop_place"
+                android:textSize="@dimen/my_buttonTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/contentDescription"
+                android:scaleType="centerInside"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:padding="@dimen/my_marginVertical" >
+
+            <TextView
+                android:id="@+id/tv_shop_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shop_adress"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <TextView
+                android:id="@+id/tv_shop_adressShow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my_marginVertical"
+                android:layout_marginRight="@dimen/my_marginVertical"
+                android:layout_toRightOf="@+id/tv_shop_adress"
+                android:maxLines="2"
+                android:textSize="@dimen/my_buttonTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/contentDescription"
+                android:scaleType="centerInside"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:padding="@dimen/my_marginVertical" >
+
+            <TextView
+                android:id="@+id/tv_shop_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/shop_phone"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <TextView
+                android:id="@+id/tv_shop_telShow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my_marginVertical"
+                android:layout_marginRight="@dimen/my_marginVertical"
+                android:layout_toRightOf="@+id/tv_shop_phone"
+                android:textSize="@dimen/my_buttonTextSize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/contentDescription"
+                android:scaleType="centerInside"
+                android:src="@drawable/right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/my_marginVertical" >
+
+            <TextView
+                android:id="@+id/tv_shop_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/shop_description"
+                android:textColor="#A0A0A0"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/my_marginVertical"
+                android:layout_toRightOf="@+id/tv_shop_description"
+                android:fadeScrollbars="false" >
+
+                <TextView
+                    android:id="@+id/tv_shop_descriptionShow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textSize="@dimen/my_buttonTextSize" />
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_shop_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/my_marginVertical"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginVertical"
+        android:background="@drawable/homebuttonorange"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</RelativeLayout>

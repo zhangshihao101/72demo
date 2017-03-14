@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#36a3ea"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:text="筛选"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_toLeftOf="@+id/tv_filter"
+            android:layout_toRightOf="@+id/iv_back"
+            android:background="@drawable/sale_topbar_search_box"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="34dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_clear"
+                android:background="@null"
+                android:hint="商品名称 款号 仓库 条码"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#7cccff"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_line"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/psw_clear"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.spt.controler.PullToRefreshView
+        android:id="@+id/main_refreshview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_goods"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" >
+        </ListView>
+    </com.spt.controler.PullToRefreshView>
+
+</LinearLayout>

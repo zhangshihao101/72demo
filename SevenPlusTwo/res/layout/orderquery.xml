@@ -1,0 +1,352 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_ordersQuery_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_ordersQuery_orderNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="@drawable/shape"
+        android:hint="@string/orderquery_hint" />
+
+    <LinearLayout
+        android:id="@+id/ll_ordersQuery_OrderState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_marginTop"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="#E0E0E0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my_marginTop"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:gravity="left"
+            android:text="@string/orderquery_orderstate"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_ordersQuery_OrderState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/my_marginTop" >
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_orderNone"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_none"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_needPay"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/orderquery_state_needpay"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_needSend"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/orderquery_state_needsend"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_sended"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3sp"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/orderquery_state_sended"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-280sp"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_complete"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_cancel"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_return"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_return"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_ordersQuery_evaluateState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_marginTop"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="#E0E0E0"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my_marginTop"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:gravity="left"
+            android:text="@string/orderquery_evaluatestate"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_ordersQuery_evaluateState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/my_marginTop"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_evaluateNone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_none"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_evaluated"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_evaluated"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_needEvaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_needevaluate"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_marginTop"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="#E0E0E0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my_marginTop"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:gravity="left"
+            android:text="@string/orderquery_extension"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_ordersQuery_extensionState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/my_marginTop" >
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_extensionNone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_none"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_normal"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <RadioButton
+            android:id="@+id/rb_ordersQuery_tuan"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/orderselector"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/orderquery_state_tuan"
+            android:textColor="@color/ordertextselector"
+            android:textSize="@dimen/my_contentTextSize" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_marginTop"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="#E0E0E0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my_marginTop"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:gravity="left"
+            android:text="@string/orderquery_time"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/my_marginTop" >
+
+        <TextView
+            android:id="@+id/tv_ordersQuery_start"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:gravity="center_horizontal"
+            android:text="@string/orderquery_time_starttime"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/sps" />
+
+        <TextView
+            android:id="@+id/tv_ordersQuery_end"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:gravity="center_horizontal"
+            android:text="@string/orderquery_time_endtime"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ordersQuery_query"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginVertical"
+        android:background="@drawable/homebuttonorange"
+        android:gravity="center"
+        android:text="@string/orderquery_query"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</LinearLayout>

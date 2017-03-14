@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip" >
+
+        <ImageView
+            android:id="@+id/iv_company_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/topbar_back_btn_black"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="认证公司"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#DADCDC" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f8f8"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传身份证和公司信息申请审核，审核通过后您的公司将显示在人脉中"
+                    android:textColor="#787d7d" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_line2"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_legal_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_legal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/tv_legal_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="法人姓名："
+                        android:textColor="#303030" />
+
+                    <EditText
+                        android:id="@+id/et_legal_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:layout_toLeftOf="@+id/iv_legal_name_clear"
+                        android:layout_toRightOf="@+id/tv_legal_name"
+                        android:background="@null"
+                        android:hint="请输入法人姓名"
+                        android:singleLine="true"
+                        android:textColor="#303030"
+                        android:textColorHint="#c6c5c5"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_legal_name_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/psw_clear"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_legal_name"
+                    android:paddingLeft="10dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#DADCDC" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_legal_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_line"
+                    android:background="#FFFFFF"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/tv_legal_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="法人身份证号："
+                        android:textColor="#303030" />
+
+                    <ImageView
+                        android:id="@+id/iv_legal_no_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/psw_clear"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_legal_no_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:layout_toLeftOf="@+id/iv_legal_no_clear"
+                        android:layout_toRightOf="@+id/tv_legal_no"
+                        android:background="@null"
+                        android:hint="请输入法人身份证号"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#303030"
+                        android:textColorHint="#c6c5c5"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f8f8"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传法人身份证照片"
+                    android:textColor="#787d7d" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_id_front"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="7dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_id_front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/found_co_idcard_1"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/found_co_idcard_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_id_back"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_vertical"
+                    android:padding="7dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_id_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/found_co_idcard_2"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f8f8"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传营业执照"
+                    android:textColor="#787d7d" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dip" >
+
+                <ImageView
+                    android:id="@+id/iv_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/found_co_certificate"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:background="#f8f8f8"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_license_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_license_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/tv_license_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="营业执照号码："
+                        android:textColor="#303030" />
+
+                    <EditText
+                        android:id="@+id/et_license_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:layout_toLeftOf="@+id/iv_license_code_clear"
+                        android:layout_toRightOf="@+id/tv_license_code"
+                        android:background="@null"
+                        android:hint="请输入营业执照号码"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#303030"
+                        android:textColorHint="#c6c5c5"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_license_code_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/psw_clear"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_line_license_detail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_license_code"
+                    android:paddingLeft="10dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_license_detail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#DADCDC" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_license_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_line_license_detail1"
+                    android:background="#FFFFFF" >
+
+                    <TextView
+                        android:id="@+id/tv_license_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="10dip"
+                        android:text="有效期从："
+                        android:textColor="#303030" />
+
+                    <EditText
+                        android:id="@+id/et_license_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:layout_toRightOf="@+id/tv_license_start"
+                        android:background="@null"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:hint="点击选择开始日期"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:singleLine="true"
+                        android:textColor="#303030"
+                        android:textColorHint="#c6c5c5"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_line_license_detail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_license_start"
+                    android:paddingLeft="10dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_license_detail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#DADCDC" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_license_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_line_license_detail2"
+                    android:background="#FFFFFF" >
+
+                    <TextView
+                        android:id="@+id/tv_license_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="10dip"
+                        android:text="有效期至："
+                        android:textColor="#303030" />
+
+                    <EditText
+                        android:id="@+id/et_license_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:layout_toRightOf="@+id/tv_license_end"
+                        android:background="@null"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:hint="点击选择到期日期"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:singleLine="true"
+                        android:textColor="#303030"
+                        android:textColorHint="#c6c5c5"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f8f8"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="品牌注册证或品牌商品授权证：（申请为供应商为必填）"
+                    android:textColor="#787d7d" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dip" >
+
+                <ImageView
+                    android:id="@+id/iv_accredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/found_co_certificate_2"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:background="#f8f8f8"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_accredit_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_accredit_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF" >
+
+                    <TextView
+                        android:id="@+id/tv_accredit_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="10dip"
+                        android:text="有效期从："
+                        android:textColor="#303030" />
+
+                    <EditText
+                        android:id="@+id/et_accredit_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:layout_toRightOf="@+id/tv_accredit_start"
+                        android:background="@null"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:hint="点击选择开始日期"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:singleLine="true"
+                        android:textColor="#303030"
+                        android:textColorHint="#c6c5c5"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_line_accredit_detail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_accredit_start"
+                    android:paddingLeft="10dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_accredit_detail1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:background="#DADCDC" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_accredit_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_line_accredit_detail1"
+                    android:background="#FFFFFF" >
+
+                    <TextView
+                        android:id="@+id/tv_accredit_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="10dip"
+                        android:paddingTop="10dip"
+                        android:text="有效期至："
+                        android:textColor="#303030" />
+
+                    <EditText
+                        android:id="@+id/et_accredit_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dip"
+                        android:layout_marginRight="7dip"
+                        android:layout_toRightOf="@+id/tv_accredit_end"
+                        android:background="@null"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:hint="点击选择到期日期"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:singleLine="true"
+                        android:textColor="#303030"
+                        android:textColorHint="#c6c5c5"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:background="#f8f8f8"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="选择认证角色："
+                    android:textColor="#333333" />
+
+                <EditText
+                    android:id="@+id/et_role_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_role_arrow"
+                    android:background="@null"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="请选择认证角色"
+                    android:paddingLeft="20dip"
+                    android:textColor="#303030"
+                    android:textColorHint="#c6c5c5"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_role_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/list_next_tips" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:background="#f8f8f8"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#DADCDC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dip" >
+
+                <TextView
+                    android:id="@+id/tv_commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/my_co_btn"
+                    android:gravity="center"
+                    android:text="申请认证"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+                
+                <TextView
+                    android:id="@+id/tv_re_commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/my_co_btn"
+                    android:gravity="center"
+                    android:text="重新认证"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/goods_list_btn_icon3" android:state_focused="true"/>
+    <item android:drawable="@drawable/topbar_share_btn" android:state_focused="false"/>
+
+</selector>

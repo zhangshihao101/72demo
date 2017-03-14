@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iv_1" />
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/rgp_menu"
+        android:background="#D6D6D9" />
+
+    <RadioGroup
+        android:id="@+id/rgp_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/rbt_sale"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/sale_tabbar_icon1_hl"
+            android:gravity="center_vertical"
+            android:text="销售"
+            android:textColor="#52aee2"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#D6D6D9" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/rbt_stock"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/sale_tabbar_icon2"
+            android:gravity="center_vertical"
+            android:text="库存"
+            android:textColor="#C8C8C8"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#D6D6D9" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/rbt_goods"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/sale_tabbar_icon3"
+            android:gravity="center_vertical"
+            android:text="商品"
+            android:textColor="#C8C8C8"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#D6D6D9" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

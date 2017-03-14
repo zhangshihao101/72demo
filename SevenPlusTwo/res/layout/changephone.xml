@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_changePsw_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtb_changePsw_title"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:padding="@dimen/my_marginHorizontal" >
+
+            <TextView
+                android:id="@+id/tv_changePsw_currentAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/changePsw_currentAccount"
+                android:textColor="#9E9E9E"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <TextView
+                android:id="@+id/tv_changePsw_currentAccountshow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_changePsw_currentAccount"
+                android:background="@null"
+                android:textSize="@dimen/my_contentTextSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:padding="@dimen/my_marginHorizontal" >
+
+            <TextView
+                android:id="@+id/tv_changePsw_currentPsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/changePsw_currentPsw"
+                android:textColor="#9E9E9E"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <EditText
+                android:id="@+id/et_changePsw_currentPsw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_changePsw_currentPsw"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/my_contentTextSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:padding="@dimen/my_marginHorizontal" >
+
+            <TextView
+                android:id="@+id/tv_changePsw_inputNewPsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/changePsw_inputNewPsw"
+                android:textColor="#9E9E9E"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <EditText
+                android:id="@+id/et_changePsw_inputNewPsw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my_marginTop5"
+                android:layout_toRightOf="@+id/tv_changePsw_inputNewPsw"
+                android:background="@null"
+                android:hint="@string/changePsw_length"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/my_contentTextSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:background="@android:color/white"
+            android:padding="@dimen/my_marginHorizontal" >
+
+            <TextView
+                android:id="@+id/tv_changePsw_confirmNewPsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/changePsw_confirmNewPsw"
+                android:textColor="#9E9E9E"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <EditText
+                android:id="@+id/et_changePsw_confirmNewPsw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my_marginTop5"
+                android:layout_toRightOf="@+id/tv_changePsw_confirmNewPsw"
+                android:background="@null"
+                android:hint="@string/changePsw_length"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/my_contentTextSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_changePsw_next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/my_marginVertical"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:background="@drawable/homebuttonorange"
+        android:text="@string/changePsw_commit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</RelativeLayout>

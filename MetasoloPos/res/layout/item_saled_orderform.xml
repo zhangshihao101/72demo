@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <!-- 第一行 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="25"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dip"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单编号:11325156231"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dip"
+            android:layout_toRightOf="@+id/tv_order_no"
+            android:textColor="#000000"
+            android:text="客户:王尼玛"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dip"
+            android:layout_toRightOf="@+id/tv_client_name"
+            android:text="订单时间：2016-05-25 18:23:22"
+            android:textColor="#717171"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_order_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dip"
+            android:layout_toRightOf="@+id/tv_order_time"
+            android:text="收款金额：￥ 125200"
+            android:textColor="#FF6633"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" />
+
+    <!-- 第二行 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="35"
+        android:background="#FFFFFF"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_bills" >
+
+            <HorizontalScrollView
+                android:id="@+id/hs_mgallery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="#AA444444"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/ll_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btn_reprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_keepbills_enter"
+                android:text="@string/reprint"
+                android:textColor="#66CCFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_all_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.spt.controler.MyRefreshListView
+        android:id="@+id/lv_all_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp" />
+    
+    <TextView
+        android:id="@+id/tv_all_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:gravity="center" />
+
+</LinearLayout>

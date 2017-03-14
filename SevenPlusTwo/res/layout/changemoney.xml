@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_changeMoney_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changeMoney_buyer"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_changeMoney_buyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my_marginTop"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changeMoney_orderNo"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_changeMoney_orderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:text="@string/changeMoney_tip"
+            android:textColor="#F69251" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginVertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/changeMoney_goodSum"
+                    android:textColor="#9C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_changeMoney_goodSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/changeMoney_modify"
+                    android:textColor="#9C9C9C" />
+
+                <EditText
+                    android:id="@+id/et_changeMoney_goodSum"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginVertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/changeMoney_ship"
+                    android:textColor="#9C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_changeMoney_ship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/changeMoney_modify"
+                    android:textColor="#9C9C9C" />
+
+                <EditText
+                    android:id="@+id/et_changeMoney_ship"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/shape"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginVertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changeMoney_fee"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_changeMoney_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginVertical"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginBottom="@dimen/my_marginVertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/changeMoney_orderSum"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_changeMoney_orderSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#EC6D22"
+                android:textSize="@dimen/my_buttonTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_changeMoney_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginVertical"
+        android:background="@drawable/homebuttonorange"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- loading圈的四种颜色 -->
+    <color name="red">#FFC93437</color>
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <!-- activity的透明度 -->
+    <color name="activity_background">#50000000</color>
+    <!-- 右侧radiobutton -->
+    <color name="rightbtnselected">#DFF1FC</color>
+    <!-- 详情右侧按钮未选中 -->
+    <color name="rightbtnnoselect">#F2F4F5</color>
+    <!-- 切导购模式选择条 -->
+    <color name="guide">#EEF7FC</color>
+    <!-- 切支付模式选择条 -->
+    <color name="pay">#FEECC8</color>
+    <!-- 结算原色 -->
+    <color name="accountnormal">#FF6633</color>
+    <!-- 结算点击 -->
+    <color name="accountpressed">#EEAB98</color>
+    <!-- 侧边栏原色 -->
+    <color name="slidingnormal">#333333</color>
+    <!-- 侧边栏点击 -->
+    <color name="slidingpressed">#262626</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!-- 换班取消键 -->
+    <color name="logout_cancel_pressed">#888888</color>
+    <color name="logout_cancel_normal">#CCCCCC</color>
+
+    <!-- 换班确认键 -->
+    <color name="logout_enter_pressed">#D4F0FF</color>
+    <color name="logout_enter_normal">#66CCFF</color>
+    <color name="guide_sort_cancal">#66CCFF</color>
+    <color name="setting_common">#66CCFF</color>
+    <color name="white">#ffffff</color>
+
+</resources>

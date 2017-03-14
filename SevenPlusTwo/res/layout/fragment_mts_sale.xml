@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#36a3ea" >
+
+        <ImageView
+            android:id="@+id/iv_mts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/topbar_back_btn"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="销售"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/topbar_notice_btn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/msv_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title" >
+
+        <LinearLayout
+            android:id="@+id/ll_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.spt.controler.ListViewForScrollView
+                    android:id="@+id/lv_saled_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="#D6D6D9"
+                    android:dividerHeight="1px" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_show_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lv_saled_detail"
+                    android:background="#fafafa"
+                    android:paddingBottom="8dip" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#D6D6D9" />
+
+                    <TextView
+                        android:id="@+id/tv_show_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="8dip"
+                        android:background="@drawable/sale_btn"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="查看订单明细"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_show_detail"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="15dip"
+                        android:text="订单图表 "
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/rgp_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_show_detail"
+                    android:background="#fafafa"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip" >
+
+                    <RadioButton
+                        android:id="@+id/rbtn_seven"
+                        android:layout_width="0dip"
+                        android:layout_height="25dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_switch_days_left"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="过往7日"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_thirty"
+                        android:layout_width="0dip"
+                        android:layout_height="25dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_switch_days_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="过往30日"
+                        android:textColor="#319ce1"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgp_time"
+                    android:background="#fafafa"
+                    android:paddingTop="8dip" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#D6D6D9" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_frame_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl"
+                    android:layout_marginTop="12dip" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fl_frame_chart"
+                    android:background="#fafafa" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentTop="true"
+                        android:background="#D6D6D9" />
+
+                    <Button
+                        android:id="@+id/btn_order_channal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_marginTop="8dip"
+                        android:background="@drawable/sale_btn"
+                        android:gravity="center"
+                        android:text="渠道订单报表"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_bottom1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_bottom"
+                    android:background="#fafafa" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="#D6D6D9" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_my_qr"
+            android:layout_width="220dip"
+            android:layout_height="220dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/mac600" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_my_qr"
+            android:layout_marginTop="30dip" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="1.5px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/rl_inside"
+                android:background="#c8c8c8" />
+            <!-- android:text="━━━" -->
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="1.5px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/rl_inside"
+                android:background="#c8c8c8" />
+
+            <RelativeLayout
+                android:id="@+id/rl_inside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/tv_text_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="扫描二维码，加我好友"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tv_dismiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_text_qr"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dip"
+                    android:text="点击屏幕，退出二维码"
+                    android:textColor="#ffb400" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

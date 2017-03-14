@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="收货人：" />
+
+    <TextView
+        android:id="@+id/tv_myaddress_consignee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/TextView1"
+        android:layout_toLeftOf="@id/ImageView1"
+        android:layout_toRightOf="@id/TextView1"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_myaddress_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TextView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="213545645" />
+
+    <ImageView
+        android:id="@+id/ImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@id/tv_myaddress_phone"
+        android:src="@drawable/icon_phone" />
+
+    <TextView
+        android:id="@+id/tv_myaddress_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/TextView1"
+        android:layout_below="@id/tv_myaddress_consignee"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@android:color/darker_gray" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_myaddress_detail" />
+
+</RelativeLayout>

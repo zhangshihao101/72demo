@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/tv_shopItem_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/my_marginTop"
+        android:paddingTop="@dimen/my_marginTop"
+        android:text="@string/shopItem_gallery"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_shopItem_carama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/my_marginTop"
+        android:text="@string/shopItem_carama"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</LinearLayout>

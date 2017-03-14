@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:background="#FFFFFF" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/bank"
+            android:padding="8dip" />
+
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="#11312-零售客户"
+            android:textColor="#717171"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" />
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="170"
+        android:background="#EEEEEE"
+        android:paddingBottom="15dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="12dip" >
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_salebills" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@+id/iv_image"
+            android:text="订单时间：2016-05-23 18:26:29"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_linearlayout"
+            android:background="@drawable/line_2" />
+
+        <LinearLayout
+            android:id="@+id/ll_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/tv_order_time"
+            android:background="#D5F0FF"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="17"
+                android:gravity="center"
+                android:text="@string/good"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="155"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="14"
+                android:gravity="center"
+                android:text="@string/price"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="27"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13"
+                android:gravity="center"
+                android:text="@string/count"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="23"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:gravity="center"
+                android:text="@string/returned"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="49"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_linearlayout"
+            android:background="@drawable/line_2" />
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_line"
+            android:background="#FFFFFF" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.mts.pos.Common.ListViewForScrollView
+                    android:id="@+id/lv_saled_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/line_2" >
+                </com.mts.pos.Common.ListViewForScrollView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_2" />
+
+                <com.mts.pos.Common.ListViewForScrollView
+                    android:id="@+id/lv_saled_promo_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/member_lines"
+                    android:visibility="gone" >
+                </com.mts.pos.Common.ListViewForScrollView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip" >
+
+                    <TextView
+                        android:id="@+id/tv_cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="现金：￥ 0.00"
+                        android:textColor="#FF6633"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_alipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dip"
+                        android:layout_toLeftOf="@+id/tv_cash"
+                        android:text="支付宝：￥ 0.00"
+                        android:textColor="#FF6633"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dip"
+                        android:layout_toLeftOf="@+id/tv_alipay"
+                        android:text="微信：￥ 0.00"
+                        android:textColor="#FF6633"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_visa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dip"
+                        android:layout_toLeftOf="@+id/tv_wechat"
+                        android:text="银行卡：￥ 0.00"
+                        android:textColor="#FF6633"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dip"
+                        android:layout_toLeftOf="@+id/tv_visa"
+                        android:text="礼品卡：￥0.00"
+                        android:textColor="#FF6633"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="239"
+                        android:padding="17dip" >
+
+                        <TextView
+                            android:id="@+id/tv_order_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单金额：￥ 0.00"
+                            android:textColor="#FF6633"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tv_order_payed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dip"
+                            android:layout_toRightOf="@+id/tv_order_sum"
+                            android:text="已收款：￥ 0.00"
+                            android:textColor="#FF6633"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tv_order_return"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dip"
+                            android:layout_toRightOf="@+id/tv_order_payed"
+                            android:text="已退款：￥0.00"
+                            android:textColor="#FF6633"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_return"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="77"
+                        android:background="@drawable/selector_logout_enter"
+                        android:gravity="center"
+                        android:text="退款"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_2" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/loading"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

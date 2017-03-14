@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF6634" >
+
+        <ImageView
+            android:id="@+id/iv_ft_indent_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_nor"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订单"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_ft_ind_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/dis_search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ft_ind_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/iv_ft_ind_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/indent_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_ft_ind_logo"
+            android:text="您还没有相关订单"
+            android:textColor="#969696" />
+    </RelativeLayout>
+
+    <com.spt.controler.PullToRefreshView
+        android:id="@+id/main_refreshview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/RelativeLayout1"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <com.spt.controler.MyScrollView
+            android:id="@+id/msv_ft_indent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <com.spt.controler.MyExpandableListView
+                android:id="@+id/elv_ft_indent"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clickable="false" >
+            </com.spt.controler.MyExpandableListView>
+        </com.spt.controler.MyScrollView>
+    </com.spt.controler.PullToRefreshView>
+
+</RelativeLayout>

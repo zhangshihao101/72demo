@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/my_marginVertical"
+    android:paddingLeft="@dimen/my_marginHorizontal"
+    android:paddingRight="@dimen/my_marginHorizontal"
+    android:paddingTop="@dimen/my_marginVertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_priceOrStockItem_color"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <TextView
+                android:id="@+id/tv_priceOrStockItem_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/my_contentTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/goods_priceOrStockItem_size"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <TextView
+                android:id="@+id/tv_priceOrStockItem_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/my_contentTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/my_marginTop" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/goods_priceOrStockItem_price"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_priceOrStockItem_price"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/shape"
+            android:maxLength="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/my_marginTop" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/goods_priceOrStockItem_stock"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_priceOrStockItem_stock"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/shape"
+            android:maxLength="6" />
+    </LinearLayout>
+
+</LinearLayout>

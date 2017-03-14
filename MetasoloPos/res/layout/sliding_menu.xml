@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="35"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:padding="15dip"
+        android:text="登陆账户：杨秋萍"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_3" />
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:background="@drawable/selector_sliding"
+        android:clickable="true"
+        android:drawableLeft="@drawable/pic_pay"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:padding="15dip"
+        android:text="收银界面"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_3" />
+
+    <TextView
+        android:id="@+id/tv_guide"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:background="@drawable/selector_sliding"
+        android:clickable="true"
+        android:drawableLeft="@drawable/pic_guide"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:padding="15dip"
+        android:text="导购界面"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_3" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:background="@drawable/selector_sliding"
+        android:clickable="true"
+        android:drawableLeft="@drawable/pic_count"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:padding="15dip"
+        android:text="客流量统计"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_3" />
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:background="@drawable/selector_sliding"
+        android:clickable="true"
+        android:drawableLeft="@drawable/pic_setting"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:padding="15dip"
+        android:text="设置"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_3" />
+
+    <TextView
+        android:id="@+id/tv_met"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:background="@drawable/selector_sliding"
+        android:clickable="true"
+        android:drawableLeft="@drawable/pic_met"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:padding="15dip"
+        android:text="源一云商"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_3" />
+
+    <TextView
+        android:id="@+id/tv_help"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:background="@drawable/selector_sliding"
+        android:clickable="true"
+        android:drawableLeft="@drawable/pic_help"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:padding="15dip"
+        android:text="帮助"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

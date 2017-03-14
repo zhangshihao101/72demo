@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="#333333"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip" />
+        
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_img"
+            android:layout_marginLeft="10dip"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:maxLength="5"
+            android:ellipsize="end"
+            android:layout_marginTop="40dip"
+            android:text="火狐狸" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_img"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="40dip"
+            android:text="火狐狸户外华苑店火狐狸户外华苑店火狐狸户外华苑店火狐狸户外华苑店火狐狸户外华苑店"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_below="@+id/rl2"
+        android:background="@drawable/selector_sliding"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/category_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@+id/category_img"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_3" />
+    </RelativeLayout>
+
+</RelativeLayout>

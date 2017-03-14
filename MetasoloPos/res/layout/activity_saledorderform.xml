@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:background="#FFFFFF" >
+
+        <Button
+            android:id="@+id/btn_saled_menu"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/menu_btn" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/btn_saled_menu"
+            android:text="@string/saledorderform"
+            android:textColor="#717171"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="445dip"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <Button
+                android:id="@+id/btn_order_scan"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/scan" />
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="400dip"
+                android:layout_height="45dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edit_search" >
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/draw_search" />
+
+                <EditText
+                    android:id="@+id/et_order_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="4dip"
+                    android:layout_toLeftOf="@+id/iv_member_close"
+                    android:layout_toRightOf="@+id/iv_search"
+                    android:background="@null"
+                    android:hint="销售订单编号/客户名称/品名/款号/品牌"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#717171" />
+
+                <ImageView
+                    android:id="@+id/iv_order_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/close" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="170"
+        android:background="#EEEEEE"
+        android:paddingBottom="10dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:paddingTop="10dip" >
+
+        <ListView
+            android:id="@+id/lv_saled_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            android:dividerHeight="18dp" >
+        </ListView>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/loading"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

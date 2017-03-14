@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_barcode_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#D6D6D9"
+        android:descendantFocusability="beforeDescendants"
+        android:paddingBottom="40dip"
+        android:dividerHeight="1px" >
+    </ListView>
+    
+    <!-- android:descendantFocusability="beforeDescendants" -->
+    
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#36a3ea"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="提交"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

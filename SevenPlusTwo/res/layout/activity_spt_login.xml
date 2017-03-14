@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#A7CB5F" >
+
+        <ImageView
+            android:id="@+id/iv_spt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/topbar_back_btn"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录七加二平台"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_urn"
+            android:layout_width="wrap_content"
+            android:layout_height="52dip"
+            android:layout_alignLeft="@+id/btn_dis_login"
+            android:layout_alignRight="@+id/btn_dis_login"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/iv_line_urn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/line_03" />
+
+            <TextView
+                android:id="@+id/tv_urn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_line_urn"
+                android:layout_marginBottom="4dip"
+                android:text="账号:"
+                android:textColor="#333333"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/iv_clear_urn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_line_urn"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dip"
+                android:background="@drawable/psw_clear"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_urn"
+                android:layout_width="match_parent"
+                android:layout_height="26dip"
+                android:layout_above="@+id/iv_line_urn"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/iv_clear_urn"
+                android:layout_toRightOf="@+id/tv_urn"
+                android:background="@null"
+                android:ellipsize="middle"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="52dip"
+            android:layout_alignLeft="@+id/btn_dis_login"
+            android:layout_alignRight="@+id/btn_dis_login"
+            android:layout_below="@+id/rl_urn"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/iv_line_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/line_03" />
+
+            <TextView
+                android:id="@+id/tv_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_line_psw"
+                android:layout_marginBottom="4dip"
+                android:text="密码:"
+                android:textColor="#333333"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/iv_clear_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_line_psw"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dip"
+                android:background="@drawable/psw_clear"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_psw"
+                android:layout_width="match_parent"
+                android:layout_height="26dip"
+                android:layout_above="@+id/iv_line_psw"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/iv_clear_psw"
+                android:layout_toRightOf="@+id/tv_psw"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <!--
+             <CheckBox
+            android:id="@+id/cb_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_psw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:checked="true"
+            android:text="我已同意授权绑定此账号，下次免登陆"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        -->
+
+        <Button
+            android:id="@+id/btn_dis_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_psw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/spt_login_btn"
+            android:text="登    录"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!--
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mtslogo"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/dis_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:text="━━━ 没有七加二账号？使用源一账号登录 ━━━"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+        -->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 上面的action部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="24"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="12" >
+
+                <Button
+                    android:id="@+id/btn_guide_menu"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/menu_btn" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="77" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="30" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/guide_page"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13" >
+
+                <Button
+                    android:id="@+id/btn_guide_scan"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/scan" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="127" >
+
+                <EditText
+                    android:id="@+id/et_guide_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/edit_search"
+                    android:drawableRight="@drawable/draw_search"
+                    android:gravity="left|center_vertical"
+                    android:hint="请输入商品条码/名称/描述 /款号/品牌"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_2" />
+
+        <!-- 下面导购页面部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="167"
+            android:orientation="vertical" >
+
+            <!-- 第一行   分类   品牌    排序 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="24"
+                android:background="#EEEEEE" >
+
+                <TextView
+                    android:id="@+id/tv_guide_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:padding="10dp"
+                    android:text="@string/sort"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_guide_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_guide_sort"
+                    android:layout_alignBottom="@+id/tv_guide_sort"
+                    android:layout_marginLeft="34dp"
+                    android:layout_toRightOf="@+id/tv_guide_sort"
+                    android:padding="10dp"
+                    android:text="@string/brand"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_guide_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34dp"
+                    android:layout_toRightOf="@+id/tv_guide_brand"
+                    android:text="@string/total"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_guide_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_guide_total"
+                    android:text="0"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_guide_amount"
+                    android:text="@string/goods"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_guide_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:background="#ffffff"
+                    android:drawableRight="@drawable/sort_down"
+                    android:padding="5dp"
+                    android:text="-按价格升序-"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="167" >
+
+                <GridView
+                    android:id="@+id/gv_guide_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:verticalSpacing="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_guide_sort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="130"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <ListView
+                            android:id="@+id/lv_guide_sort"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_guide_sort_cancal"
+                                android:layout_width="0dip"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_logout_cancel"
+                                android:gravity="center"
+                                android:text="取消"
+                                android:textColor="#717171"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/tv_guide_sort_confirm"
+                                android:layout_width="0dip"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_logout_enter"
+                                android:gravity="center"
+                                android:text="确定"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="200" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_guide_brand"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="130"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <ListView
+                            android:id="@+id/lv_guide_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_guide_brand_cancal"
+                                android:layout_width="0dip"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_logout_cancel"
+                                android:gravity="center"
+                                android:text="取消"
+                                android:textColor="#717171"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/tv_guide_brand_confirm"
+                                android:layout_width="0dip"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_logout_enter"
+                                android:gravity="center"
+                                android:text="确定"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="200" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

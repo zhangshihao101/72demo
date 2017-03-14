@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shapewithoutsolid"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_mySearchEditText_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_mySearchEditText_content"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="12"
+        android:background="@null"
+        android:hint="@string/mySearchET_goodName"
+        android:singleLine="true"
+        android:textSize="@dimen/my_contentTextSize" />
+
+    <LinearLayout
+        android:id="@+id/ll_mySearchEditText_clear"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_mySearchEditText_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/clearbutton"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

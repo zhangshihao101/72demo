@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart_30_count"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="#ffffff"
+        android:paddingLeft="15dip" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D6D6D9" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart_30_sum"
+        android:layout_width="fill_parent"
+        android:layout_height="400dip"
+        android:background="#ffffff"
+        android:paddingLeft="20dip" />
+
+</LinearLayout>

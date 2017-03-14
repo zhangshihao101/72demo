@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_cancelorder_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:text="@string/cancelorder_reasonTip"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_cancelorder_reason"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginTop" >
+
+        <RadioButton
+            android:id="@+id/rb_cancelorder_notEnough"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelorder_notEnough" />
+
+        <RadioButton
+            android:id="@+id/rb_cancelorder_notOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelorder_notOrder" />
+
+        <RadioButton
+            android:id="@+id/rb_cancelorder_buyer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelorder_buyer" />
+
+        <RadioButton
+            android:id="@+id/rb_cancelorder_otherReason"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelorder_otherReason" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_cancelorder_otherReason"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:background="@drawable/shape"
+        android:inputType="text"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_cancelorder_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="@drawable/homebuttonorange"
+        android:text="@string/ok"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</LinearLayout>

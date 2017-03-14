@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_all_goods"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/tv_all_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_all_goods"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/iv_all_goods"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="阿斯利康合法克里斯法律上看风景阿喀琉斯福建萨科伦访华空间哈苏德将卡上的空间ash快接啊上" />
+
+    <TextView
+        android:id="@+id/market"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_all_goods_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_all_goods"
+        android:text="市场价："
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_all_goods_market_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/market"
+        android:layout_toRightOf="@id/market"
+        android:text="暂无信息"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/market"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_all_goods"
+        android:text="商城价："
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_all_goods_shop_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/shop"
+        android:layout_toRightOf="@id/shop"
+        android:text="暂无信息"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_all_goods"
+        android:layout_below="@id/iv_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="库存："
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_all_goods_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/stock"
+        android:layout_toRightOf="@id/stock"
+        android:text=""
+        android:textColor="#8CB928" />
+
+    <TextView
+        android:id="@+id/disprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_all_goods"
+        android:layout_below="@id/stock"
+        android:text="代销价："
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_all_goods_disprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/disprice"
+        android:layout_toRightOf="@id/disprice"
+        android:text=""
+        android:textColor="#FF6634" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/iv_all_goods"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F0F0F0" />
+
+    <ImageView
+        android:id="@+id/iv_all_goods_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_line"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp"
+        android:src="@drawable/share" />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/disprice"
+        android:layout_margin="10dp"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImageView"
+        android:layout_marginLeft="10dp"
+        android:text="代销开始时间："
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_begin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TextView1"
+        android:layout_toRightOf="@id/TextView1"
+        android:text="2016年11月01日12:00" />
+
+    <TextView
+        android:id="@+id/tv_is_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_begin_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="代销结束时间："
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TextView2"
+        android:layout_toRightOf="@id/TextView2"
+        android:text="2016年11月11日24:00" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView2" />
+
+</RelativeLayout>

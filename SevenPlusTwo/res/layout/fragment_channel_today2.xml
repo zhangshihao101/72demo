@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_nocount"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:gravity="center"
+                    android:text="暂无销售数量"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/chart_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/chart_count"
+                    android:background="#D6D6D9" />
+
+                <TextView
+                    android:id="@+id/tv_nosum"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_below="@+id/chart_count"
+                    android:gravity="center"
+                    android:text="暂无销售金额"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/chart_sum"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_below="@+id/iv_line"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

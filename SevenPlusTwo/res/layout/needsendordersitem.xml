@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/my_marginVertical"
+    android:paddingLeft="@dimen/my_marginHorizontal"
+    android:paddingRight="@dimen/my_marginHorizontal"
+    android:paddingTop="@dimen/my_marginVertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/ll_needSendOrdersItem_content"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_needSendOrdersItem_ordersName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_needSendOrdersItem_ordersDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingTop="@dimen/my_marginTop"
+            android:textColor="#D1D1D1"
+            android:textSize="@dimen/my_radioButtonTextSize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_needSendOrdersItem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:textColor="#646464"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_needSendOrdersItem_priceChanged"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@+id/tv_needSendOrdersItem_price"
+            android:background="@drawable/changed"
+            android:gravity="center_vertical"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

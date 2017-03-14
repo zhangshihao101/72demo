@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/out_notice"
+            android:textColor="#616161"
+            android:textSize="@dimen/my_buttonTextSize"
+            android:layout_alignParentLeft="true" />
+        
+        <ImageView
+            android:id="@+id/iv_outPop_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/my_marginTop"
+            android:src="@drawable/clearbutton"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/out_shopName"
+            android:textColor="#616161"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_outPop_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616161"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/out_receiveMessager"
+            android:textColor="#616161"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_outPop_receiveMessager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616161"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/out_good"
+            android:textColor="#616161"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_outPop_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#616161"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:text="@string/out_messageContent"
+        android:textColor="#616161"
+        android:textSize="@dimen/my_contentTextSize" />
+
+    <EditText
+        android:id="@+id/et_outPop_messageContent"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/my_contentTextSize" />
+
+    <Button
+        android:id="@+id/btn_outPop_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_marginVertical"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginVertical"
+        android:background="@drawable/homebuttongreen"
+        android:text="@string/validate_commit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_remind_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="源一云商v2.3.1发布公告"
+        android:textColor="#3c3c3c"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_remind_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="2016-10-24 10:24:00"
+        android:textColor="#c8c8c8" />
+
+    <TextView
+        android:id="@+id/tv_remind_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="看见撒谎打飞机喀什的空间撒活动撒艰苦大会"
+        android:textColor="#3c3c3c"
+        android:textSize="15sp" />
+
+</LinearLayout>

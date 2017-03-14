@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/my_marginVertical"
+    android:paddingLeft="@dimen/my_marginHorizontal"
+    android:paddingRight="@dimen/my_marginHorizontal"
+    android:paddingTop="@dimen/my_marginVertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="80dp"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/tv_MessageDeleteItem_checked"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="3dp" />
+
+        <ImageView
+            android:id="@+id/iv_MessageDeleteItem_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/imageshape"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/my_marginTop"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/iv_MessageDeleteItem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:textSize="@dimen/my_radioButtonTextSize" />
+
+            <TextView
+                android:id="@+id/iv_MessageDeleteItem_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_MessageDeleteItem_name"
+                android:gravity="right"
+                android:textColor="#9F9F9F"
+                android:textSize="@dimen/my_radioButtonTextSize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_MessageDeleteItem_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:textColor="#9F9F9F"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="3dp"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_MessageItem_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/imageshape"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/my_marginTop"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/iv_MessageItem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:textSize="@dimen/my_radioButtonTextSize" />
+
+            <TextView
+                android:id="@+id/iv_MessageItem_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:textColor="#9F9F9F"
+                android:textSize="@dimen/my_radioButtonTextSize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_MessageItem_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#9F9F9F"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

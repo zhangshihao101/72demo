@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imageshape"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/tv_alertItem_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginTop5"
+        android:layout_marginRight="@dimen/my_marginTop5"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:textColor="#9E9E9E"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+    <EditText
+        android:id="@+id/et_alertItem_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginTop5"
+        android:layout_marginRight="@dimen/my_marginTop5"
+        android:layout_marginTop="@dimen/my_marginTop5"
+        android:background="@android:color/white"
+        android:inputType="text"
+        android:padding="3dp"
+        android:maxLines="5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/my_marginTop5" >
+
+        <TextView
+            android:id="@+id/tv_alertItem_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/cancel"
+            android:textColor="#9E9E9E"
+            android:textSize="@dimen/my_buttonTextSize" />
+
+        <TextView
+            android:id="@+id/tv_alertItem_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/ok"
+            android:textColor="#EC8E50"
+            android:textSize="@dimen/my_buttonTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

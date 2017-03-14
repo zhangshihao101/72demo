@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spt.sht"
+    android:versionCode="15"
+    android:versionName="3.1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.spt.controler.App"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.spt.page.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.spt.page.LoginActivity" />
+
+        <!-- 友盟分享 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 新浪微博分享 -->
+        <!--
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+
+        <!-- QQ、QQ空间分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付分享 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity android:name="com.spt.page.LogisticsInfoActivity" />
+        <activity android:name="com.spt.page.DisOrderDetailActivity" />
+        <activity
+            android:name="com.spt.page.AddAddressActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity android:name="com.spt.page.PayMethodActivity" />
+        <activity android:name="com.spt.page.MyAddressActivity" />
+        <activity android:name="com.spt.page.DisSearchResultActivity" />
+        <activity
+            android:name="com.spt.page.ConfirmOrderActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.spt.page.SearchIndentActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity android:name="com.spt.page.DisGoodsDetailsActivity" />
+        <activity android:name="com.spt.page.AllBrandActivity" />
+        <activity
+            android:name="com.spt.page.DisSearchActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" >
+        </activity>
+        <activity android:name="com.spt.page.DistributionActivity" >
+        </activity>
+        <activity
+            android:name="com.spt.page.ApplyDisActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity android:name="com.spt.page.HomeActivity" />
+        <activity android:name="com.spt.page.ValidatePhoneActivity" />
+        <activity android:name="com.spt.page.ModifyPasswordActivity" />
+        <activity android:name="com.spt.page.HomePageActivity" />
+        <activity android:name="com.spt.page.ChangePassWordActivity" />
+        <activity
+            android:name="com.spt.page.OrderDetailActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.spt.page.OrderQueryActivity" />
+        <activity android:name="com.spt.page.OrderQueryResultActivity" />
+        <activity android:name="com.spt.page.SendOrderActivity" />
+        <activity android:name="com.spt.page.ReceiveInfoActivity" />
+        <activity
+            android:name="com.spt.page.TransInfoActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.spt.page.OperationLogActivity" />
+        <activity android:name="com.spt.page.CancelOrderActivity" />
+        <activity android:name="com.spt.page.GoodDetailActivity" />
+        <activity android:name="com.spt.page.GoodPriceOrStockActivity" />
+        <activity android:name="com.spt.page.NeedSendOrderActivity" />
+        <activity android:name="com.spt.page.MessageActivity" />
+        <activity android:name="com.spt.page.AllOrdersActivity" />
+        <activity android:name="com.spt.page.AccountActivity" />
+        <activity android:name="com.spt.page.OutOfStockActivity" />
+        <activity android:name="com.spt.page.ProductConsultationActivity" />
+        <activity android:name="com.spt.page.GoodQueryActivity" />
+        <activity android:name="com.spt.page.WelcomeActivity" />
+        <activity android:name="com.spt.page.AdressManageActivity" />
+        <activity android:name="com.spt.page.BillQueryActivity" />
+        <activity android:name="com.spt.page.BillDetailActivity" />
+        <activity android:name="com.spt.page.BillHeadDetailActivity" />
+        <activity
+            android:name="com.spt.page.MessageDetailActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.spt.page.ScanTransInfoActivity" />
+        <activity
+            android:name="com.spt.page.ChangeMoneyActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.MyShopActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.FindPasswordActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.RegisterActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.spt.page.SetPasswordActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <!-- 新增的源一云商部分 -->
+        <activity
+            android:name="com.spt.page.MtsLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.MtsMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.MtsOrderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.MtsOrderFilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.MtsOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.MtsChannelOrdersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.NewHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsStkFilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsStkDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.ListTest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.spt.page.MtsStkSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsStkSearchResultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsStkSearchFilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsGoodsFilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsGoodsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.spt.page.MtsChoseShopActivity" />
+        <activity
+            android:name="com.spt.page.MtsGoodsEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsBarcodeEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsSharepriceEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.spt.controler.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsEditChangeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsGoodsClassifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MtsPerfectionMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.DisLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.SptLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.PeopleSearchFriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.PersonalDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.EditMydataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.MyCompanyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.CompanyAuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.PersonalAuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.EditSomethingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.ChangeGenderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.ChosenFlagActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.HavenoCompanyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.FindPersonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.SetSalePriceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.spt.page.FindCompanyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.spt.page.FindPeopleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
+        </activity>
+        <activity android:name="com.spt.page.CompanyDetailActivity" />
+        <activity
+            android:name="com.spt.page.LegalCardActicvity"
+            android:theme="@style/activity" />
+        <activity
+            android:name="com.spt.page.BusinessLicenseActivity"
+            android:theme="@style/activity" />
+        <activity
+            android:name="com.spt.page.CredentialActivity"
+            android:theme="@style/activity" />
+        <activity
+            android:name="com.spt.page.AddFriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.ChosenRoleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.spt.page.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.spt.page.RectCameraActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        
+        <activity
+            android:name="com.spt.page.PeopleSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" >
+        </activity>
+        <activity android:name="com.spt.page.MtsMsgActivity" />
+        <activity android:name="com.spt.page.MtsMsgDetailActivity" />
+        <activity android:name="com.spt.page.AccountExplainActivity" />
+
+        <service android:name="com.spt.utils.MyHttpPostService" />
+        <service android:name="com.spt.utils.MyHttpGetService" />
+
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false"
+            android:process=":push" >
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.SystemReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.MessageReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.ElectionReceiver"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.RegistrationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.example.sevenplustwo.intent.action.COMMAND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengMessageBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="com.example.sevenplustwo.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.example.sevenplustwo.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+
+                <category android:name="umeng" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:process=":push" />
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":push" >
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService" />
+            </intent-filter>
+        </service>
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="czn31jvbv7o3th1szabg76h734hyrfp6" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5860e2393eae2569de0010dd" >
+        </meta-data>
+        <!--
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55de8aabe0f55afcc40029a7" >
+        </meta-data>
+        -->
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyRefreshListView
+        android:id="@+id/lv_product_productList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:descendantFocusability="beforeDescendants"
+        android:divider="#FFFFFF"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tv_product_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:gravity="center"
+        android:textSize="@dimen/my_contentTextSize"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/prlv_billhead_billHeadList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:id="@+id/tv_billhead_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:gravity="center"
+        android:textSize="@dimen/my_contentTextSize"
+        android:visibility="invisible" />
+
+</RelativeLayout>

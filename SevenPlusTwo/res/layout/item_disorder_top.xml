@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImageView"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:text="订单号：" />
+
+    <TextView
+        android:id="@+id/tv_disorder_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/TextView1"
+        android:layout_toRightOf="@id/TextView1"
+        android:text="123456" />
+
+    <TextView
+        android:id="@+id/tv_disorder_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/TextView1"
+        android:layout_marginRight="15dp"
+        android:text="待付款"
+        android:textColor="#9DCE09" />
+
+    <ImageView
+        android:id="@+id/ImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TextView1"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/TextView1"
+        android:layout_below="@id/ImageView1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="支付时间：" />
+
+    <TextView
+        android:id="@+id/tv_disorder_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/TextView2"
+        android:layout_toRightOf="@id/TextView2"
+        android:text="未支付" />
+
+    <ImageView
+        android:id="@+id/ImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TextView2"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/TextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/TextView1"
+        android:layout_below="@id/ImageView2"
+        android:layout_marginTop="8dp"
+        android:text="总额：" />
+
+    <TextView
+        android:id="@+id/TextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/TextView4"
+        android:layout_toRightOf="@id/TextView4"
+        android:text="￥"
+        android:textColor="#FF6634" />
+
+    <TextView
+        android:id="@+id/tv_disorder_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/TextView4"
+        android:layout_toRightOf="@id/TextView5"
+        android:text="0.00"
+        android:textColor="#FF6634" />
+
+    <TextView
+        android:id="@+id/TextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_disorder_total"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tv_disorder_total"
+        android:text="预计收益：" />
+
+    <TextView
+        android:id="@+id/tv_disorder_predict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TextView6"
+        android:layout_toRightOf="@id/TextView6"
+        android:text=""
+        android:textColor="#8CB92A" />
+
+    <ImageView
+        android:id="@+id/ImageView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TextView4"
+        android:layout_marginTop="8dp"
+        android:background="#F0F0F0" />
+
+</RelativeLayout>

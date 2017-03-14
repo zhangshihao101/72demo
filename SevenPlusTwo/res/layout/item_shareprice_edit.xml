@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="黑色"
+            android:textColor="#282828" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dip"
+            android:layout_toRightOf="@+id/tv_color"
+            android:text="M"
+            android:textColor="#282828" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="170dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="12dip"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:background="#f8f8f8"
+            android:ellipsize="end"
+            android:hint="暂无分享价"
+            android:maxLength="16"
+            android:paddingLeft="6dip"
+            android:singleLine="true"
+            android:textColor="#282828"
+            android:textColorHint="#a0a0a0"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

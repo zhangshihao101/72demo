@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="13"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:gravity="center"
+        android:text="09:00 ~ 10:00"
+        android:textColor="#333333"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="16"
+        android:gravity="center"
+        android:text="多云"
+        android:textColor="#333333"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="46"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="37" >
+
+        <TextView
+            android:id="@+id/tv_people"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/chosen_member2"
+            android:gravity="center"
+            android:text="16"
+            android:textColor="#333333"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="39"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="120" >
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:background="@drawable/chosen_member2"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="19"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

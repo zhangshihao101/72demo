@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_goodPriceOrStock_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_goodPriceOrStock_save"
+        android:layout_below="@+id/mtb_goodPriceOrStock_title"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/my_marginHorizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_goodPriceOrStock_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/test" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_goodPriceOrStock_goodName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/my_contentTextSize"
+                    android:layout_marginRight="@dimen/my_marginHorizontal" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/my_marginHorizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goods_goodsManager_brand"
+                        android:textSize="@dimen/my_contentTextSize"
+                        android:textColor="#9C9C9C" />
+
+                    <TextView
+                        android:id="@+id/tv_goodPriceOrStock_goodBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/my_contentTextSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/my_marginHorizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goods_goodsManager_type"
+                        android:textSize="@dimen/my_contentTextSize"
+                        android:textColor="#9C9C9C" />
+
+                    <TextView
+                        android:id="@+id/tv_goodPriceOrStock_goodType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/my_contentTextSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/my_marginHorizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goods_goodsManager_belong"
+                        android:textSize="@dimen/my_contentTextSize"
+                        android:textColor="#9C9C9C" />
+
+                    <TextView
+                        android:id="@+id/tv_goodPriceOrStock_goodBelong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/my_contentTextSize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_goodPriceOrStock_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="afterDescendants"
+            android:layout_marginTop="@dimen/my_marginTop" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_goodPriceOrStock_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginBottom="@dimen/my_marginVertical"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize"
+        android:background="@drawable/homebuttongreen" />
+
+</RelativeLayout>

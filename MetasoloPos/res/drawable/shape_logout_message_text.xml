@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <stroke
+        android:width="0.5sp"
+        android:color="#FFFFFF" />
+    <!-- 定义描边的宽度和描边的颜色值 -->
+
+    <solid android:color="#DFF1FC" />
+
+</shape>

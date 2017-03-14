@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="34"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="142"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="95"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dip" >
+
+                        <TextView
+                            android:id="@+id/tv_can_return"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可退数量：9"
+                            android:textColor="#333333"
+                            android:textSize="20sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_return_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_below="@+id/tv_can_return"
+                            android:layout_marginTop="13dip" >
+
+                            <TextView
+                                android:id="@+id/tv_return_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="退货数量"
+                                android:textColor="#333333"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/et_return_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30dip"
+                                android:layout_toRightOf="@+id/tv_return_count"
+                                android:background="@drawable/selector_creat_edit"
+                                android:numeric="integer"
+                                android:singleLine="true"
+                                android:textColor="#333333" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_return_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_below="@+id/rl_return_count"
+                            android:layout_marginTop="13dip" >
+
+                            <TextView
+                                android:id="@+id/tv_return_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="退货价格"
+                                android:textColor="#333333"
+                                android:textSize="17sp" />
+
+                            <EditText
+                                android:id="@+id/et_return_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30dip"
+                                android:layout_toRightOf="@+id/tv_return_price"
+                                android:background="@drawable/selector_creat_edit"
+                                android:numeric="integer|decimal"
+                                android:singleLine="true"
+                                android:textColor="#333333" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_return_reason"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_below="@+id/rl_return_price"
+                            android:layout_marginTop="13dip" >
+
+                            <TextView
+                                android:id="@+id/tv_return_reason"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="退货原因"
+                                android:textColor="#333333"
+                                android:textSize="17sp" />
+
+                            <Spinner
+                                android:id="@+id/sp_return_reason"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30dip"
+                                android:layout_toRightOf="@+id/tv_return_reason"
+                                android:background="@drawable/spinner_bg" />
+
+                            <!-- android:background="@drawable/selector_creat_edit" -->
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:layout_below="@+id/rl_return_reason"
+                            android:layout_marginTop="13dip"
+                            android:orientation="horizontal" >
+
+                            <RelativeLayout
+                                android:id="@+id/rl_storage"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="120" >
+
+                                <TextView
+                                    android:id="@+id/tv_storage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:text="入库仓库"
+                                    android:textColor="#333333"
+                                    android:textSize="17sp" />
+
+                                <Spinner
+                                    android:id="@+id/sp_storage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="30dip"
+                                    android:layout_toRightOf="@+id/tv_storage"
+                                    android:background="@drawable/spinner_bg" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:orientation="vertical" >
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_storage_position"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="80" >
+
+                                <TextView
+                                    android:id="@+id/tv_storage_position"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:text="仓位"
+                                    android:textColor="#333333"
+                                    android:textSize="17sp" />
+
+                                <Spinner
+                                    android:id="@+id/sp_storage_position"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dip"
+                                    android:layout_toRightOf="@+id/tv_storage_position"
+                                    android:background="@drawable/selector_creat_edit" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="15"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#CCCCCC"
+                        android:text="@string/cancel"
+                        android:textColor="#333333"
+                        android:textSize="26sp" />
+
+                    <Button
+                        android:id="@+id/btn_enter"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#66CCFF"
+                        android:text="@string/confirm"
+                        android:textColor="#ffffff"
+                        android:textSize="26sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="30"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

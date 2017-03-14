@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/my_marginVertical"
+    android:paddingLeft="@dimen/my_marginHorizontal"
+    android:paddingRight="@dimen/my_marginHorizontal"
+    android:paddingTop="@dimen/my_marginVertical"
+    android:background="@android:color/white"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:orientation="vertical"
+        android:background="#AFAFAF" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:text="@string/mySearchET_goodName"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_out_productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:visibility="gone" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:text="@string/out_productColor"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_out_Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:text="@string/out_productUserName"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_out_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:textColor="#616161" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/my_marginTop" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:text="@string/out_productPhone"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_out_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:textColor="#616161" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/my_marginTop" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:text="@string/out_productDate"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_out_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:textColor="#616161" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/my_marginTop" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:text="@string/out_productInfo"
+                android:textColor="#9C9C9C" />
+
+            <TextView
+                android:id="@+id/tv_out_Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/my_contentTextSize"
+                android:textColor="#616161" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_out_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/out_notice"
+            android:visibility="invisible"
+            android:textSize="@dimen/my_contentTextSize"
+            android:textColor="#F7924E" />
+    </RelativeLayout>-->
+
+</LinearLayout>

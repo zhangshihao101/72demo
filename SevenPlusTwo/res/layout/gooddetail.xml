@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_gooddetail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_gooddetail_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_gooddetail_goodName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/my_marginHorizontal"
+                android:textSize="@dimen/my_contentTextSize" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/my_marginHorizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goods_goodsManager_brand"
+                    android:textSize="@dimen/my_contentTextSize"
+                    android:textColor="#9C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_gooddetail_goodBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/my_contentTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/my_marginHorizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goods_goodsManager_type"
+                    android:textSize="@dimen/my_contentTextSize"
+                    android:textColor="#9C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_gooddetail_goodType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/my_contentTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/my_marginHorizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goods_goodsManager_belong"
+                    android:textSize="@dimen/my_contentTextSize"
+                    android:textColor="#9C9C9C" />
+
+                <TextView
+                    android:id="@+id/tv_gooddetail_goodBelong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/my_contentTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_marginTop"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:text="@string/goods_goodDetail_priceOrStock"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <LinearLayout
+            android:id="@+id/ll_gooddetail_priceOrStock"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_gooddetail_priceOrStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/right"
+                android:gravity="right"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:text="@string/goods_goodDetail_newSequence"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_gooddetail_newSequence"
+                android:layout_width="53dp"
+                android:layout_height="28dp"
+                android:background="@drawable/shape"
+                android:gravity="right"
+                android:hint="@string/spaceHint"
+                android:inputType="numberSigned"
+                android:maxLength="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:text="@string/goods_goodDetail_pushSequence"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_gooddetail_pushSequence"
+                android:layout_width="53dp"
+                android:layout_height="28dp"
+                android:background="@drawable/shape"
+                android:gravity="right"
+                android:hint="@string/spaceHint"
+                android:inputType="numberSigned"
+                android:maxLength="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:text="@string/goods_goodDetail_push"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/tb_gooddetail_push"
+                android:layout_width="53dp"
+                android:layout_height="28dp"
+                android:background="@drawable/toggleselector"
+                android:gravity="right"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_weight="9"
+            android:gravity="left"
+            android:text="@string/goods_goodDetail_noSale"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="3dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/tb_gooddetail_noSale"
+                android:layout_width="53dp"
+                android:layout_height="28dp"
+                android:background="@drawable/toggleselector"
+                android:gravity="right"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <!-- Button
+        android:id="@+id/btn_gooddetail_save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:layout_marginTop="@dimen/my_marginVertical"
+        android:background="@drawable/homebuttongreen"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />-->
+
+</LinearLayout>

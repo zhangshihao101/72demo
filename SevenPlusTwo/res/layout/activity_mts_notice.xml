@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#36a3ea" >
+
+        <ImageView
+            android:id="@+id/iv_mts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_nor"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rgp_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="8dip"
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <RadioButton
+            android:id="@+id/rbtn_seven"
+            android:layout_width="0dip"
+            android:layout_height="25dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_switch_days_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="系统公告"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_thirty"
+            android:layout_width="0dip"
+            android:layout_height="25dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_switch_days_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="消息提醒"
+            android:textColor="#319ce1"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgp_notice"
+        android:background="#fafafa"
+        android:paddingTop="8dip" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#D6D6D9" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_frame_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl" />
+
+</RelativeLayout>

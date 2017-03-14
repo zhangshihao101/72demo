@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/my_marginVertical"
+    android:paddingLeft="@dimen/my_marginHorizontal"
+    android:paddingRight="@dimen/my_marginHorizontal"
+    android:paddingTop="@dimen/my_marginVertical"
+    android:background="@android:color/white"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_billHeadItem_billHeadNo"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:textSize="@dimen/my_contentTextSize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_marginTop" >
+        
+        <TextView
+            android:id="@+id/tv_billHeadItem_pricetip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/billHeadItem_price"
+            android:textSize="@dimen/my_contentTextSize" />
+
+        <TextView
+            android:id="@+id/tv_billHeadItem_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_billHeadItem_pricetip"
+            android:textSize="@dimen/my_contentTextSize"
+            android:textColor="#8BBA29" />
+
+        <TextView
+            android:id="@+id/tv_billHeadItem_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/my_contentTextSize" />
+    </RelativeLayout>
+
+</LinearLayout>

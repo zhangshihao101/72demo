@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line"
+    android:orientation="horizontal"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/ll_mySearchEditText_clear"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_myEditTextLogin_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_myEditTextLogin_content"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="11"
+        android:background="@null"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_myEditTextLogin_clear"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_myEditTextLogin_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/clearbuttonlogin"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

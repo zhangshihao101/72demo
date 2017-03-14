@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#36a3ea" >
+
+        <ImageView
+            android:id="@+id/iv_mts_stk_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/topbar_back_btn" />
+
+        <EditText
+            android:id="@+id/et_mts_stk_search"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@id/iv_mts_stk_back"
+            android:background="@drawable/sale_topbar_search_box"
+            android:gravity="center_vertical"
+            android:hint="商品名称 款号 仓库 条码"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_mts_stk_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="筛选"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_mts_stk_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <RadioButton
+            android:id="@+id/rb_high"
+            android:layout_width="0dip"
+            android:layout_height="25dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_switch_days_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="库存由高到低"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_low"
+            android:layout_width="0dip"
+            android:layout_height="25dip"
+            android:layout_weight="1"
+            android:background="@drawable/selector_switch_days_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="库存由低到高"
+            android:textColor="#319ce1"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D6D6D9" />
+
+    <FrameLayout
+        android:id="@+id/fl_mts_stk_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dip"
+    android:orientation="vertical" >
+
+    <!-- 第一行 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="25"
+        android:background="#52AEE2"
+        android:paddingBottom="10dip"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pic_help" />
+
+        <TextView
+            android:id="@+id/tv_billsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:layout_toRightOf="@+id/iv_header"
+            android:text="零售客户"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_keeptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dip"
+            android:layout_toRightOf="@+id/tv_billsname"
+            android:text="挂单时间：2016-05-25 18:23:22"
+            android:textColor="#717171"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_billsamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="金额： ￥ 1252.00"
+            android:textColor="#FF6633"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 第二行 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="60"
+        android:paddingBottom="10dip"
+        android:background="#FFFFFF"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/tv_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:text="14秋冬JACK WOLFSKIN狼爪户外男防水透气冲锋衣三合一/5004981亚版高帮运动鞋"
+            android:textColor="#66CCFF"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_bills"
+            android:layout_marginTop="10dip" >
+
+            <HorizontalScrollView
+                android:id="@+id/hs_mgallery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="#AA444444"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/ll_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btn_keepbills_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_keepbills_cancel"
+                android:text="取  消"
+                android:textColor="#717171" />
+
+            <Button
+                android:id="@+id/btn_keepbills_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:layout_toLeftOf="@+id/btn_keepbills_cancel"
+                android:background="@drawable/selector_keepbills_enter"
+                android:text="取  单"
+                android:textColor="#66CCFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

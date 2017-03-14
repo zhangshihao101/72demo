@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_low_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingRight="20dp"
+            android:text="拉克三大卡拉圣诞快乐撒谎的撒娇快乐哈萨克拉护发素克里夫哈萨克林海峰雷克萨护发素考虑恢复"
+            android:textColor="#3c3c3c"
+            android:textSize="16sp" />
+
+        <com.spt.controler.CircleImageView
+            android:id="@+id/iv_low"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/test180180" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_low_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="土拔鼠" />
+
+        <TextView
+            android:id="@+id/tv_low_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="土拔鼠" />
+
+        <TextView
+            android:id="@+id/tv_low_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="土拔鼠" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout1"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="品牌"
+            android:textColor="#a0a0a0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="款号"
+            android:textColor="#a0a0a0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="型号"
+            android:textColor="#a0a0a0"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout2"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/tv_low_storage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仓库1:可销售库存"
+            android:textColor="#a0a0a0" />
+
+        <TextView
+            android:id="@+id/tv_low_salecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="8"
+            android:textColor="#a0a0a0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现货数量"
+            android:textColor="#a0a0a0" />
+
+        <TextView
+            android:id="@+id/tv_low_nowcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="10"
+            android:textColor="#a0a0a0" />
+    </LinearLayout>
+
+</RelativeLayout>

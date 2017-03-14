@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_dis_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+    <ImageView 
+        android:id="@+id/iv_dis_bg"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F0F0F0"/>
+
+    <RadioGroup
+        android:id="@+id/rg_distribution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/rb_dis_directory"
+            style="@style/DistributionTab"
+            android:drawableTop="@drawable/rbt_dis_tag_directory"
+            android:text="目录" />
+
+        <RadioButton
+            android:id="@+id/rb_dis_shopcart"
+            style="@style/DistributionTab"
+            android:drawableTop="@drawable/rbt_dis_tag_cart"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_dis_indent"
+            style="@style/DistributionTab"
+            android:drawableTop="@drawable/rbt_dis_tag_indent"
+            android:text="订单" />
+    </RadioGroup>
+
+</LinearLayout>

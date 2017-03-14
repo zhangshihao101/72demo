@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/tv_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_member_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_member_name"
+        android:layout_below="@id/tv_member_name"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#787878"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_member_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_member_position"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@id/tv_member_position"
+        android:text="1555468467897"
+        android:textColor="#787878"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_member_isFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_tag_com_isfriend"
+        android:text="已是好友"
+        android:textColor="#d2d2d2" />
+
+</RelativeLayout>

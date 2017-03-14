@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.spt.sht"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/person_detail_head_bg" >
+
+        <ImageView
+            android:id="@+id/iv_personal_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/person_detail_head_qrcode_btn_black" />
+
+        <ImageView
+            android:id="@+id/iv_personal_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/topbar_back_btn_black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/tv_personal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <com.spt.controler.CircleImageView
+                android:id="@+id/civ_personal_header"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_below="@+id/tv_personal_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/noheader"
+                app:border_color="#FFFFFF"
+                app:border_width="1dp" />
+
+            <TextView
+                android:id="@+id/tv_personal_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/civ_personal_header"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_add_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_personal_no"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/person_detail_head_add_btn"
+                android:gravity="center"
+                android:text="加好友"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_below="@+id/rl_title"
+        android:background="#DCDCDC" />
+
+    <RelativeLayout
+        android:id="@+id/rl_positon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line1"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_positon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="地区："
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_positon_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_positon"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/iv_positon_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_next_tips"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_below="@+id/rl_positon"
+        android:background="#DCDCDC" />
+
+    <RelativeLayout
+        android:id="@+id/rl_flag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line2"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="身份标签："
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_flag_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_flag"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/iv_flag_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_next_tips"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_below="@+id/rl_flag"
+        android:background="#DCDCDC" />
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line3"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="联系方式："
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_phone_show"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:singleLine="true"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/iv_new_friends_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_next_tips"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line4"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_below="@+id/rl_phone"
+        android:background="#DCDCDC" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line4"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="所属公司："
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_company_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_company"
+            android:ellipsize="middle"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/iv_company_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/list_next_tips"
+            android:ellipsize="middle"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line5"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_below="@+id/rl_personal_company"
+        android:background="#DCDCDC" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line5"
+        android:paddingBottom="12dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:id="@+id/tv_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="个人简介："
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_introduction_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_introduction"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_line6"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_below="@+id/rl_personal_introduction"
+        android:background="#DCDCDC" />
+
+</RelativeLayout>

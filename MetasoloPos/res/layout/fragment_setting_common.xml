@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:background="#EEEEEE" >
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" />
+
+    <!-- 语言设置 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_common_language"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="26"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_language"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_language_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/iv_language"
+            android:text="中文"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/iv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/next" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6"
+        android:background="#EEEEEE" >
+    </LinearLayout>
+
+    <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" /> -->
+
+    <!-- 打印小票 -->
+
+    <!-- <RelativeLayout
+        android:id="@+id/rl_common_print"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="26"
+        android:background="#FFFFFF"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tv_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_print"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/st_common_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" /> -->
+
+    <!-- 客流量统计设置 -->
+
+    <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:background="#EEEEEE"
+        android:padding="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="客流量统计设置"
+            android:textColor="#717171"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" /> -->
+
+    <!-- 营业时间 -->
+
+   <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="26"
+        android:background="#FFFFFF"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="营业时间"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/sp_start"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@+id/tv_time" />
+
+        <TextView
+            android:id="@+id/tv_zhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@+id/sp_start"
+            android:text="至"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/sp_end"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@+id/tv_zhi" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" /> -->
+
+    <!-- 客流量统计开关 -->
+
+    <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="26"
+        android:background="#FFFFFF"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/tv_footfall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开启客流量统计"
+            android:textColor="#333333"
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/st_footfall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_2" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="150"
+        android:background="#EEEEEE" >
+    </LinearLayout>
+
+</LinearLayout>

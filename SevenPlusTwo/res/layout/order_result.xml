@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_ordersResult_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/prlv_ordersResult_OrdersList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mtb_ordersResult_title"
+        android:layout_marginTop="@dimen/my_marginTop" />
+
+    <TextView
+        android:id="@+id/tv_ordersResult_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtb_ordersResult_title"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:gravity="center"
+        android:textSize="@dimen/my_contentTextSize"
+        android:visibility="invisible" />
+
+</RelativeLayout>

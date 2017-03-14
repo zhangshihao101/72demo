@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#36a3ea" >
+
+        <ImageView
+            android:id="@+id/iv_mts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/topbar_back_btn"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分享价编辑"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hole_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_barcode_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_line1"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/tv_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dip"
+                android:text="颜色"
+                android:textColor="#282828" />
+
+            <TextView
+                android:id="@+id/tv_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:layout_toRightOf="@+id/tv_text_color"
+                android:text="尺码"
+                android:textColor="#282828" />
+
+            <TextView
+                android:id="@+id/tv_text_shareprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/tv_text_size"
+                android:text="分享价"
+                android:textColor="#282828" />
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rl_barcode_title"
+            android:background="#D6D6D9" />
+
+        <ListView
+            android:id="@+id/lv_barcode_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_line2"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="#D6D6D9"
+            android:dividerHeight="1px"
+            android:paddingBottom="40dip" >
+        </ListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#36a3ea"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="提交"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_select"
+    android:padding="3dp"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/tv_popItem_recalled"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/popItem_recalled"
+        android:textSize="@dimen/my_contentTextSize"
+        android:textColor="#9C9C9C"
+        android:layout_marginTop="@dimen/my_marginTop" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#9C9C9C" />
+
+    <TextView
+        android:id="@+id/tv_popItem_unrecall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/popItem_unrecall"
+        android:textSize="@dimen/my_contentTextSize"
+        android:textColor="#9C9C9C" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#9C9C9C" />
+
+    <TextView
+        android:id="@+id/tv_popItem_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/popItem_all"
+        android:textSize="@dimen/my_contentTextSize"
+        android:textColor="#9C9C9C" />
+
+</LinearLayout>

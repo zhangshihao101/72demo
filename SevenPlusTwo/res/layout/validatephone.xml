@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sevenplustwo.MainActivity$PlaceholderFragment" >
+
+    <com.spt.controler.MyTitleBar
+        android:id="@+id/mtb_validate_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mtb_validate_title"
+        android:layout_marginTop="@dimen/my_marginTop"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:text="@string/validate_tipPhone"
+            android:textSize="@dimen/my_buttonTextSize" />
+
+        <com.spt.controler.MyEditText
+            android:id="@+id/met_validate_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:text="@string/validate_tipCode"
+            android:textSize="@dimen/my_buttonTextSize" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_marginHorizontal"
+            android:layout_marginRight="@dimen/my_marginHorizontal"
+            android:layout_marginTop="@dimen/my_marginTop"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_validate_code"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:background="@drawable/shape"
+                android:hint="@string/validate_code"
+                android:inputType="numberSigned"
+                android:maxLength="6" />
+
+            <Button
+                android:id="@+id/btn_validate_btnClick"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="2"
+                android:background="#F5924F"
+                android:text="@string/validate_btn"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my_buttonTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_validate_commit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/my_marginVertical"
+        android:layout_marginLeft="@dimen/my_marginHorizontal"
+        android:layout_marginRight="@dimen/my_marginHorizontal"
+        android:background="#F5924F"
+        android:text="@string/changePsw_commit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/my_buttonTextSize" />
+
+</RelativeLayout>
